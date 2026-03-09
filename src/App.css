@@ -1,1 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Inconsolata:wght@200..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 @import "tailwindcss";
+
+
+@theme {
+  --font-display: "Old Standard TT", sans-serif;
+  --font-script: "Ballet", sans-serif;
+  --font-sans: "Inconsolata", sans-serif;
+}
