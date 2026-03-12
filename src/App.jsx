@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Background />
-      <Navbar/>
+      <Navbar />
 
       <main className="relative z-10">
         <section className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
@@ -112,10 +112,11 @@ function App() {
                   Quiz de Pokémon
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  Quiz interactivo inspirado en el universo Pokémon donde,
-                  mediante una serie de preguntas de personalidad, el usuario
-                  descubre qué Pokémon de la quinta generación encaja mejor con
-                  su forma de ser.
+                  Quiz interactivo inspirado en el universo Pokémon, mediante
+                  una serie de preguntas de personalidad, el usuario descubre
+                  qué Pokémon encaja mejor con su forma de ser. El proyecto
+                  combina diseño, lógica y una experiencia dinámica pensada para
+                  que cada usuario obtenga un resultado único y divertido.
                 </p>
                 <div className="flex gap-4 mb-6">
                   <div className="w-8 h-8 bg-[#800020] mask-[url('/img/react.svg')] mask-no-repeat mask-center mask-contain"></div>
@@ -146,6 +147,119 @@ function App() {
           <h2 className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12">
             <span className="font-script text-9xl">E</span>xperiencia
           </h2>
+
+          <div className="relative w-full max-w-4xl mx-auto">
+            <div className="absolute left-1/2 top-0 h-full w-1 bg-[#800020]/40 -translate-x-1/2 rounded-full"></div>
+            <div className="flex flex-col gap-20">
+              <div className="relative flex flex-col md:flex-row items-center">
+                <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-[#800020] rounded-full border-4 border-white z-10"></div>
+                <div
+                  className="
+          w-[90%] md:w-[45%]
+          bg-white/10 backdrop-blur-2xl
+          border border-white/30
+          shadow-[0_8px_32px_rgba(0,0,0,0.2)]
+          ring-1 ring-white/20
+          rounded-2xl
+          p-6
+          mt-10 md:mt-0
+          md:ml-auto
+        "
+                >
+                  <h3 className="text-2xl font-semibold text-[#800020]">
+                    Desarrolladora Web - Wordpress
+                  </h3>
+                  <p className="text-[#800020]/80 font-medium mt-1">
+                    Rodas Soluciones
+                  </p>
+                  <p className="text-gray-800 mt-2">
+                    Desarrollo, mantengo y optimizo sitios web en{" "}
+                    <b>WordPress</b>, incluyendo tiendas online con{" "}
+                    <b>WooCommerce</b>.
+                    <br />
+                    <br />
+                    Me encargo de la comunicación directa con los clientes,
+                    asesorándolos durante todo el proceso de creación de la web
+                    y manteniendo un contacto continuo para asegurar que el
+                    proyecto avanza según sus necesidades. <br />
+                    <br />
+                    También realizo <b>SEO on-page</b>, soporte técnico y diseño
+                    de material gráfico corporativo con <b>CorelDRAW</b>.
+                  </p>
+                  <span className="text-gray-600 text-sm mt-3 block">
+                    ENE 2026 – Actualidad
+                  </span>
+                </div>
+              </div>
+
+              <div className="relative flex flex-col md:flex-row items-center">
+                <div className="absolute left-1/2 -translate-x-1/2 w-6 h-6 bg-[#800020] rounded-full border-4 border-white z-10"></div>
+                <div
+                  className="
+          w-[90%] md:w-[45%]
+          bg-white/10 backdrop-blur-2xl
+          border border-white/30
+          shadow-[0_8px_32px_rgba(0,0,0,0.2)]
+          ring-1 ring-white/20
+          rounded-2xl
+          p-6
+          mt-10 md:mt-0
+          md:mr-auto
+        "
+                >
+                  <h3 className="text-2xl font-semibold text-[#800020]">
+                    Soporte de base de datos - Prácticas
+                  </h3>
+                  <p className="text-[#800020]/80 font-medium mt-1">
+                    NTT DATA Europe & Latam
+                  </p>
+                  <p className="text-gray-800 mt-2">
+                    Gestioné y analicé datos mediante consultas avanzadas en{" "}
+                    <b>SQL y PL/SQL</b>, optimizando macroconsultas con
+                    herramientas como <b>DBeaver</b>. <br />
+                    <br />
+                    Apoyé la automatización de procesos utilizando{" "}
+                    <b>Excel avanzado</b> y macros para agilizar tareas y
+                    validar información. <br />
+                    <br />
+                    Motoricé y ejecuté procesos en <b>Control‑M</b>, asegurando
+                    una correcta programación de tareas, y utilizaba{" "}
+                    <b>MobaXTerm</b> y entornos <b>Unix</b> para la
+                    administración, verificación de servicios y ejecución de
+                    scripts. <br />
+                    <br />
+                    Registraba y documentaba incidencias y tareas en <b>Jira</b>
+                    , facilitando la trazabilidad y la colaboración con el
+                    equipo.
+                  </p>
+                  <span className="text-gray-600 text-sm mt-3 block">
+                    OCT 2025 – DIC 2025
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="
+      w-full
+      border-l-4 border-[#800020]
+      bg-white/60 backdrop-blur-xl
+      shadow-md
+      rounded-xl
+      p-4
+      hover:shadow-xl transition-shadow
+      mt-20
+    "
+          >
+            <h3 className="text-2xl font-semibold text-[#800020]">
+              Grado Superior - Desarrollo de Aplicaciones Web
+            </h3>
+            <p className="text-gray-700 mt-2">I.E.S Ribera de los Molinos</p>
+            <p className="text-gray-500 mt-1">Mula, Murcia</p>
+            <span className="text-gray-500 text-sm mt-3 block">
+              2023 – 2025
+            </span>
+          </div>
         </section>
         <section id="stack" className="py-20 px-6 lg:px-50">
           <h2 className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-8">

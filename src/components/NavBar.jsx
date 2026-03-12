@@ -6,12 +6,12 @@ export default function Navbar() {
   return (
     <header
       className="
-        absolute top-4 left-1/2 -translate-x-1/2
+        absolute top-10 left-1/2 -translate-x-1/2
     w-[90%] md:w-[30%]
     backdrop-blur-xl bg-white/40
     border border-white/40
     shadow-lg
-    rounded-2xl
+    rounded-full
     z-40
     px-8 py-3
   "
@@ -41,17 +41,29 @@ export default function Navbar() {
           ></span>
         </button>
 
-        <nav className="hidden md:flex gap-10 text-gray-800 font-medium mx-auto">
-          <a href="#projects" className="hover:text-[#800020] transition">
+        <nav className="hidden md:flex gap-10 text-gray-800 text-xl mx-auto">
+          <a
+            href="#projects"
+            className="relative hover:text-[#800020] transition duration-300 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#800020] after:transition-all after:duration-300 hover:after:w-full"
+          >
             Proyectos
           </a>
-          <a href="#experiencia" className="hover:text-[#800020] transition">
+          <a
+            href="#experiencia"
+            className="relative hover:text-[#800020] transition duration-300 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#800020] after:transition-all after:duration-300 hover:after:w-full"
+          >
             Experiencia
           </a>
-          <a href="#stack" className="hover:text-[#800020] transition">
+          <a
+            href="#stack"
+            className="relative hover:text-[#800020] transition duration-300 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#800020] after:transition-all after:duration-300 hover:after:w-full"
+          >
             Stack
           </a>
-          <a href="#sobre-mi" className="hover:text-[#800020] transition">
+          <a
+            href="#sobre-mi"
+            className="relative hover:text-[#800020] transition duration-300 after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#800020] after:transition-all after:duration-300 hover:after:w-full"
+          >
             Sobre Mi
           </a>
         </nav>
