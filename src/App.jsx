@@ -1,12 +1,19 @@
 import "./App.css";
 import Background from "./components/Background";
 import Navbar from "./components/NavBar";
+import { motion } from "framer-motion";
 
 function App() {
   return (
     <>
       <Background />
-      <Navbar />
+      <motion.header
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <Navbar />
+      </motion.header>
 
       <main className="relative z-10">
         <section className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
@@ -14,43 +21,70 @@ function App() {
             Since 2025
           </h3>
 
-          <h2 className="font-script text-6xl sm:text-6xl md:text-8xl lg:text-9xl text-[#800020] leading-tight">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="font-script text-6xl sm:text-6xl md:text-8xl lg:text-9xl text-[#800020] leading-tight"
+          >
             Fátima Belakdar Navas
-          </h2>
+          </motion.h2>
 
           <h3 className="font-display text-4xl sm:text-3xl md:text-5xl lg:text-6xl mt-5 tracking-tightest">
             Desarrolladora Frontend
           </h3>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <a
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 300 }}
               href="https://www.linkedin.com/in/f%C3%A1tima-belakdar-navas-47874427b/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-2 rounded-full border border-[#800020] text-[#800020] bg-white 
-             hover:bg-[#800020] hover:text-white transition-colors duration-300"
+              className="px-10 py-2 rounded-full border border-[#800020] text-[#800020] bg-white hover:bg-[#800020] hover:text-white transition-colors duration-300 inline-block"
             >
               LinkedIn
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 300 }}
               href="https://github.com/hecatxe"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-2 rounded-full border border-[#800020] text-[#800020] bg-white 
-             hover:bg-[#800020] hover:text-white transition-colors duration-300"
+              className="px-10 py-2 rounded-full border border-[#800020] text-[#800020] bg-white hover:bg-[#800020] hover:text-white transition-colors duration-300 inline-block"
             >
               GitHub
-            </a>
-            <button className="px-10 py-2 rounded-full border border-[#800020] text-[#800020] bg-white hover:bg-[#800020] hover:text-white transition-colors duration-300">
+            </motion.a>
+
+            <motion.a
+              href="cv/FatimaBelakdarNavas_DesarrolladoraFrontend.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              className="px-10 py-2 rounded-full border border-[#800020] text-[#800020] bg-white hover:bg-[#800020] hover:text-white transition-colors duration-300"
+            >
               Descargar CV
-            </button>
+            </motion.a>
           </div>
         </section>
 
         <section id="projects" className="py-20 px-6">
-          <h2 className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12">
-            <span className="font-script text-9xl">P</span>royectos
-          </h2>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12"
+          >
+            <h2 className="">
+              <span className="font-script text-9xl">P</span>royectos
+            </h2>
+          </motion.h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
             {/* Plathery */}
@@ -81,20 +115,29 @@ function App() {
                 </div>
 
                 <div className="flex gap-3">
-                  <a
+                  <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                     href="https://plathery-1.onrender.com/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="px-6 py-2 rounded-full border border-[#800020] text-[#800020] hover:bg-[#800020] hover:text-white transition-colors"
                   >
                     Link
-                  </a>
-                  <a
+                  </motion.a>
+
+                  <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                     href="https://github.com/hecatxe/Plathery"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="px-6 py-2 rounded-full border border-[#800020] text-[#800020] hover:bg-[#800020] hover:text-white transition-colors"
                   >
                     Código
-                  </a>
+                  </motion.a>
                 </div>
               </div>
             </div>
@@ -124,29 +167,43 @@ function App() {
                 </div>
 
                 <div className="flex gap-3">
-                  <a
+                  <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                     href="https://pokemon-quiz-beryl.vercel.app/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="px-6 py-2 rounded-full border border-[#800020] text-[#800020] hover:bg-[#800020] hover:text-white transition-colors"
                   >
                     Link
-                  </a>
-                  <a
+                  </motion.a>
+                  <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                     href="https://github.com/hecatxe/pokemon-quiz"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="px-6 py-2 rounded-full border border-[#800020] text-[#800020] hover:bg-[#800020] hover:text-white transition-colors"
                   >
                     Código
-                  </a>
+                  </motion.a>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section id="experiencia" className="py-20 px-6 lg:px-50">
-          <h2 className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12">
+        <section id="experiencia" className="py-50 px-6 lg:px-50">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12"
+          >
             <span className="font-script text-9xl">E</span>xperiencia
-          </h2>
+          </motion.h2>
 
           <div className="relative w-full max-w-4xl mx-auto">
             <div className="absolute left-1/2 top-0 h-full w-1 bg-[#800020]/40 -translate-x-1/2 rounded-full"></div>
@@ -156,9 +213,9 @@ function App() {
                 <div
                   className="
           w-[90%] md:w-[45%]
-          bg-white/10 backdrop-blur-2xl
+          bg-white/10 backdrop-blur-md
           border border-white/30
-          shadow-[0_8px_32px_rgba(0,0,0,0.2)]
+          shadow-[0_8px_32px_rgba(0,0,0,0.1)]
           ring-1 ring-white/20
           rounded-2xl
           p-6
@@ -197,9 +254,9 @@ function App() {
                 <div
                   className="
           w-[90%] md:w-[45%]
-          bg-white/10 backdrop-blur-2xl
+          bg-white/10 backdrop-blur-md
           border border-white/30
-          shadow-[0_8px_32px_rgba(0,0,0,0.2)]
+          shadow-[0_8px_32px_rgba(0,0,0,0.1)]
           ring-1 ring-white/20
           rounded-2xl
           p-6
@@ -241,31 +298,59 @@ function App() {
           </div>
           <div
             className="
-      w-full
-      border-l-4 border-[#800020]
-      bg-white/60 backdrop-blur-xl
-      shadow-md
-      rounded-xl
-      p-4
-      hover:shadow-xl transition-shadow
-      mt-20
-    "
+            w-full
+            border-l-4 border-[#800020]
+           bg-white/60
+            shadow-md
+            rounded-xl
+            p-4
+            hover:shadow-xl transition-shadow
+            mt-20
+            "
           >
             <h3 className="text-2xl font-semibold text-[#800020]">
               Grado Superior - Desarrollo de Aplicaciones Web
             </h3>
             <p className="text-gray-700 mt-2">I.E.S Ribera de los Molinos</p>
-            <p className="text-gray-500 mt-1">Mula, Murcia</p>
+            <p className="text-gray-500 mt-1">Mula, Región de Murcia</p>
             <span className="text-gray-500 text-sm mt-3 block">
               2023 – 2025
             </span>
           </div>
+          <div
+            className="
+            w-full
+            border-l-4 border-[#800020]
+           bg-white/60 
+            shadow-md
+            rounded-xl
+            p-4
+            hover:shadow-xl transition-shadow
+            mt-10
+            "
+          >
+            <h3 className="text-2xl font-semibold text-[#800020]">
+              Certificado de Finalización - UI and UX Design Novice to
+              Professional
+            </h3>
+            <p className="text-gray-700 mt-2">NTT DATA Europe & Latam</p>
+            <p className="text-gray-500 mt-1">Murcia, Región de Murcia</p>
+            <span className="text-gray-500 text-sm mt-3 block">
+              Nov 2025 – Dic 2025
+            </span>
+          </div>
         </section>
-        <section id="stack" className="py-20 px-6 lg:px-50">
-          <h2 className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-8">
+        <section id="stack" className="py-50 px-6 lg:px-50">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12"
+          >
             <span className="font-script text-9xl">S</span>tack{" "}
             <span className="font-script text-9xl">T</span>ecnológico
-          </h2>
+          </motion.h2>
           <p className="text-gray-700 mb-10 text-center text-2xl">
             Tecnologías que han formado parte de mi crecimiento y experiencia en
             el desarrollo Frontend.
@@ -536,11 +621,54 @@ function App() {
             </div>
           </div>
         </section>
-        <section id="sobre-mi" className="py-20 px-6 lg:px-50">
-          <h2 className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12">
+        <section id="sobre-mi" className="py-50 px-6 lg:px-50">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12"
+          >
             <span className="font-script text-9xl">S</span>obre{" "}
             <span className="font-script text-9xl">M</span>i
-          </h2>
+          </motion.h2>
+
+          <div
+            className="
+            w-full md:w-[70%] lg:w-[65%] mx-auto
+          bg-white/10 backdrop-blur-md
+            border border-white/20
+            shadow-[0_8px_32px_rgba(0,0,0,0.15)]
+            rounded-3xl
+            p-10 md:p-14
+           text-left
+          "
+          >
+            <img
+              src="/img/pfp.jpg"
+              alt="Foto de Perfil"
+              className="w-40 h-40 rounded-full float-left mr-6 mb-3 object-cover"
+              style={{ shapeOutside: "circle()" }}
+            />
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+              Soy{" "}
+              <span className="text-[#800020] font-display">
+                Desarrolladora Frontend
+              </span>{" "}
+              con más de un año de experiencia creando proyectos personales y
+              académicos que me han permitido afianzar mis habilidades y
+              entender a fondo el proceso de construcción de una interfaz.
+              <br /> Sigo de forma estricta los principios de{" "}
+              <span className="text-[#800020] font-display">UX / UI</span> para
+              asegurar que cada diseño sea intuitivo, accesible y centrado en
+              las personas.
+              <br /> Me gusta trabajar con código limpio, bien estructurado y
+              fácil de mantener, estoy en constante crecimiento, aprendiendo y
+              explorando nuevas tecnologías para mejorar cada proyecto que
+              desarrollo.{" "}
+            </p>
+          </div>
+          <div className="w-24 h-1 bg-[#800020] mx-auto mt-12 rounded-full"></div>
         </section>
       </main>
     </>

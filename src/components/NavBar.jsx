@@ -8,10 +8,10 @@ export default function Navbar() {
       className="
         absolute top-10 left-1/2 -translate-x-1/2
     w-[90%] md:w-[30%]
-    backdrop-blur-xl bg-white/40
+    backdrop-blur-sm bg-white/40
     border border-white/40
     shadow-lg
-    rounded-full
+    rounded-4xl md:rounded-full
     z-40
     px-8 py-3
   "
