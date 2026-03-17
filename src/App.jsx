@@ -635,7 +635,7 @@ function App() {
 
           <div
             className="
-            w-full md:w-[70%] lg:w-[65%] mx-auto
+            w-full md:w-[70%] lg:w-[70%] mx-auto
           bg-white/10 backdrop-blur-md
             border border-white/20
             shadow-[0_8px_32px_rgba(0,0,0,0.15)]

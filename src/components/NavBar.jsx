@@ -7,7 +7,7 @@ export default function Navbar() {
     <header
       className="
         absolute top-10 left-1/2 -translate-x-1/2
-    w-[90%] md:w-[30%]
+    w-[90%] md:w-[40%]
     backdrop-blur-sm bg-white/40
     border border-white/40
     shadow-lg
