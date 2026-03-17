@@ -8,3 +8,6 @@
   --font-sans: "Inconsolata", sans-serif;
   --tracking-tightest: -0.070em;
 }
+html {
+  scroll-behavior: smooth;
+}
