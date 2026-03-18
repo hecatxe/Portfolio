@@ -79,11 +79,9 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12"
+            className="tracking-tightest text-6xl md:text-7xl font-display text-center text-[#800020] mb-12"
           >
-            <h2 className="">
-              <span className="font-script text-9xl">P</span>royectos
-            </h2>
+            <span className="font-script text-8xl md:text-9xl">P</span>royectos
           </motion.h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 max-w-6xl mx-auto">
@@ -200,9 +198,10 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12"
+            className="tracking-tightest text-6xl md:text-7xl font-display text-center text-[#800020] mb-12"
           >
-            <span className="font-script text-9xl">E</span>xperiencia
+            <span className="font-script text-8xl md:text-9xl">E</span>
+            xperiencia
           </motion.h2>
 
           <div className="relative w-full max-w-4xl mx-auto">
@@ -346,10 +345,11 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12"
+            className="tracking-tightest text-6xl md:text-7xl font-display text-center text-[#800020] mb-12"
           >
-            <span className="font-script text-9xl">S</span>tack{" "}
-            <span className="font-script text-9xl">T</span>ecnológico
+            <span className="font-script text-8xl md:text-9xl">S</span>tack{" "}
+            <span className="font-script text-8xl md:text-9xl">T</span>
+            ecnológico
           </motion.h2>
           <p className="text-gray-700 mb-10 text-center text-2xl">
             Tecnologías que han formado parte de mi crecimiento y experiencia en
@@ -627,10 +627,11 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="tracking-tightest text-7xl font-display text-center text-[#800020] mb-12"
+            className="tracking-tightest text-6xl md:text-7xl font-display text-center text-[#800020] mb-12"
           >
-            <span className="font-script text-9xl">S</span>obre{" "}
-            <span className="font-script text-9xl">M</span>i
+            <span className="font-script text-8xl md:text-9xl">S</span>obre {" "}
+            
+            <span className="font-script text-8xl md:text-9xl">M</span>i
           </motion.h2>
 
           <div
@@ -650,7 +651,7 @@ function App() {
               className="w-40 h-40 rounded-full float-left mr-6 mb-3 object-cover"
               style={{ shapeOutside: "circle()" }}
             />
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed mb-6">
+            <p className="text-1xl md:text-xl text-gray-700 leading-relaxed mb-6">
               Soy{" "}
               <span className="text-[#800020] font-display">
                 Desarrolladora Frontend
