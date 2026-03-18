@@ -71,20 +71,17 @@ export default function Navbar() {
 
       {open && (
         <div className="md:hidden flex flex-col items-center gap-4 pb-4 text-gray-800 font-medium">
-          <a href="#inicio" className="hover:text-[#800020] transition">
-            Inicio
-          </a>
-          <a href="#sobre-mi" className="hover:text-[#800020] transition">
-            Sobre mí
-          </a>
-          <a href="#proyectos" className="hover:text-[#800020] transition">
+          <a href="#projects" className="hover:text-[#800020] transition">
             Proyectos
+          </a>
+          <a href="#experiencia" className="hover:text-[#800020] transition">
+            Experiencia
           </a>
           <a href="#stack" className="hover:text-[#800020] transition">
             Stack
           </a>
-          <a href="#contacto" className="hover:text-[#800020] transition">
-            Contacto
+          <a href="#sobre-mi" className="hover:text-[#800020] transition">
+            Sobre Mi
           </a>
         </div>
       )}
