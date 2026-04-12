@@ -1,5 +1,6 @@
 import "./App.css";
 import Background from "./components/Background";
+import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
 import { motion } from "framer-motion";
 
@@ -10,14 +11,14 @@ function App() {
       <motion.header
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
       >
         <Navbar />
       </motion.header>
 
       <main className="relative z-10">
         <section className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
-          <h3 className="font-sans mb-10 text-2xl sm:text-2xl md:text-3xl tracking-tightest">
+          <h3 className="font-sans mb-7 text-2xl sm:text-2xl md:text-3xl md:mb-10 tracking-tightest">
             Since 2025
           </h3>
 
@@ -190,6 +191,62 @@ function App() {
                 </div>
               </div>
             </div>
+
+            {/* Inkvoice */}
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="img/Inkvoice.png"
+                alt="Proyecto 1"
+                className="w-full h-48 object-cover"
+              />
+
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold text-[#800020] mb-2">
+                  Inkvoice
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Inkvoice nació de un problema real: los freelancers necesitan
+                  una forma sencilla y profesional de gestionar su facturación
+                  sin depender de plantillas de Word ni pagar suscripciones
+                  caras. La app permite crear facturas y albaranes, gestionar
+                  clientes, descargar PDFs al instante y seguir el estado de los
+                  cobros desde un dashboard visual.
+                </p>
+                <div className="flex gap-4 mb-6">
+                  <div className="w-8 h-8 bg-[#800020] mask-[url('/img/nextdotjs.svg')] mask-no-repeat mask-center mask-contain"></div>
+                  <div className="w-8 h-8 bg-[#800020] mask-[url('/img/typescript.svg')] mask-no-repeat mask-center mask-contain"></div>
+                  <div className="w-8 h-8 bg-[#800020] mask-[url('/img/postgresql.svg')] mask-no-repeat mask-center mask-contain"></div>
+                  <div className="w-8 h-8 bg-[#800020] mask-[url('/img/prisma.svg')] mask-no-repeat mask-center mask-contain"></div>
+                  <div className="w-8 h-8 bg-[#800020] mask-[url('/img/supabase.svg')] mask-no-repeat mask-center mask-contain"></div>
+                  <div className="w-8 h-8 bg-[#800020] mask-[url('/img/tailwindcss.svg')] mask-no-repeat mask-center mask-contain"></div>
+                </div>
+
+                <div className="flex gap-3">
+                  <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    href="https://inkvoice-silk.vercel.app/dashboard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-2 rounded-full border border-[#800020] text-[#800020] hover:bg-[#800020] hover:text-white transition-colors"
+                  >
+                    Link
+                  </motion.a>
+                  <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    href="https://github.com/hecatxe/inkvoice"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-2 rounded-full border border-[#800020] text-[#800020] hover:bg-[#800020] hover:text-white transition-colors"
+                  >
+                    Código
+                  </motion.a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section id="experiencia" className="py-50 px-6 lg:px-50">
@@ -240,10 +297,15 @@ function App() {
                     proyecto avanza según sus necesidades. <br />
                     <br />
                     También realizo <b>SEO on-page</b>, soporte técnico y diseño
-                    de material gráfico corporativo con <b>CorelDRAW</b>.
+                    de material gráfico corporativo con <b>CorelDRAW</b>.<br />
+                    <br />
+                    Gestión de tareas administrativas, incluyendo la elaboración
+                    de facturas y albaranes para clientes y proveedores, así
+                    como reparación y mantenimiento de software en entorno de
+                    tienda.
                   </p>
                   <span className="text-gray-600 text-sm mt-3 block">
-                    ENE 2026 – Actualidad
+                    ENE 2026 – ABR 2026
                   </span>
                 </div>
               </div>
@@ -374,6 +436,20 @@ function App() {
                    opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
                   >
                     React
+                  </span>
+                </div>
+                <div className="relative group">
+                  <img
+                    src="/img/nextdotjs.svg"
+                    alt="NextJS"
+                    className="w-15 h-15 transition-all duration-400 hover:drop-shadow-[0_0_12px_#800020]"
+                  />
+                  <span
+                    className="absolute -top-8 left-1/2 -translate-x-1/2
+                   bg-[#800020] text-white text-xs px-3 py-2 rounded-full
+                   opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+                  >
+                    NextJS
                   </span>
                 </div>
                 <div className="relative group">
@@ -566,6 +642,20 @@ function App() {
                     TypeScript
                   </span>
                 </div>
+                <div className="relative group">
+                  <img
+                    src="/img/nextdotjs.svg"
+                    alt="NextJS"
+                    className="w-15 h-15 transition-all duration-400 hover:drop-shadow-[0_0_12px_#800020]"
+                  />
+                  <span
+                    className="absolute -top-8 left-1/2 -translate-x-1/2
+                   bg-[#800020] text-white text-xs px-3 py-2 rounded-full
+                   opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+                  >
+                    NextJS
+                  </span>
+                </div>
               </div>
             </div>
 
@@ -617,6 +707,48 @@ function App() {
                     MongoDB
                   </span>
                 </div>
+                <div className="relative group">
+                  <img
+                    src="/img/postgresql.svg"
+                    alt="PostgreSQL"
+                    className="w-15 h-15 transition-all duration-400 hover:drop-shadow-[0_0_12px_#800020]"
+                  />
+                  <span
+                    className="absolute -top-8 left-1/2 -translate-x-1/2
+                   bg-[#800020] text-white text-xs px-3 py-2 rounded-full
+                   opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+                  >
+                    PostgreSQL
+                  </span>
+                </div>
+                <div className="relative group">
+                  <img
+                    src="/img/prisma.svg"
+                    alt="Prisma"
+                    className="w-15 h-15 transition-all duration-400 hover:drop-shadow-[0_0_12px_#800020]"
+                  />
+                  <span
+                    className="absolute -top-8 left-1/2 -translate-x-1/2
+                   bg-[#800020] text-white text-xs px-3 py-2 rounded-full
+                   opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+                  >
+                    Prisma
+                  </span>
+                </div>
+                <div className="relative group">
+                  <img
+                    src="/img/supabase.svg"
+                    alt="Supabase"
+                    className="w-15 h-15 transition-all duration-400 hover:drop-shadow-[0_0_12px_#800020]"
+                  />
+                  <span
+                    className="absolute -top-8 left-1/2 -translate-x-1/2
+                   bg-[#800020] text-white text-xs px-3 py-2 rounded-full
+                   opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
+                  >
+                    Supabase
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -629,8 +761,7 @@ function App() {
             viewport={{ once: true }}
             className="tracking-tightest text-6xl md:text-7xl font-display text-center text-[#800020] mb-12"
           >
-            <span className="font-script text-8xl md:text-9xl">S</span>obre {" "}
-            
+            <span className="font-script text-8xl md:text-9xl">S</span>obre{" "}
             <span className="font-script text-8xl md:text-9xl">M</span>i
           </motion.h2>
 
@@ -672,6 +803,7 @@ function App() {
           <div className="w-24 h-1 bg-[#800020] mx-auto mt-12 rounded-full"></div>
         </section>
       </main>
+      <Footer/>
     </>
   );
 }
