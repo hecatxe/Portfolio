@@ -247,6 +247,46 @@ function App() {
                 </div>
               </div>
             </div>
+            {/* Cheezy */}
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="img/Cheezy.png"
+                alt="Proyecto 1"
+                className="w-full h-48 object-cover"
+              />
+
+              <div className="p-6">
+                <h3 className="text-2xl font-semibold text-[#800020] mb-2">
+                  Cheezy
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Cheezy es un proyecto conceptual de web corporativa para una
+                  marca ficticia de quesos artesanales. Desarrollada con
+                  WordPress (WP-Local) y Elementor, la página está enfocada en
+                  transmitir la identidad de marca y presentar el catálogo de
+                  productos de forma visual, cuidando la estética y la
+                  experiencia de navegación.
+                </p>
+                <div className="flex gap-4 mb-6">
+                  <div className="w-8 h-8 bg-[#800020] mask-[url('/img/wordpress.svg')] mask-no-repeat mask-center mask-contain "></div>
+                  <div className="w-8 h-8 bg-[#800020] mask-[url('/img/elementor.svg')] mask-no-repeat mask-center mask-contain"></div>
+                </div>
+
+                <div className="flex gap-3">
+                  <motion.a
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.97 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                    href="https://drive.google.com/file/d/1RfecP7dUSswxr4bxlb47QoDxgOIaogbM/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-2 rounded-full border border-[#800020] text-[#800020] hover:bg-[#800020] hover:text-white transition-colors"
+                  >
+                    Link
+                  </motion.a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section id="experiencia" className="py-50 px-6 lg:px-50">
@@ -803,7 +843,7 @@ function App() {
           <div className="w-24 h-1 bg-[#800020] mx-auto mt-12 rounded-full"></div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
