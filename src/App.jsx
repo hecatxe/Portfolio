@@ -3,6 +3,7 @@ import Background from "./components/Background";
 import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
 import { motion } from "framer-motion";
+import StatusBadge from "./components/Status";
 
 function App() {
   return (
@@ -18,9 +19,7 @@ function App() {
 
       <main className="relative z-10">
         <section className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
-          <h3 className="font-sans mb-7 text-2xl sm:text-2xl md:text-3xl md:mb-10 tracking-tightest">
-            Since 2025
-          </h3>
+          <StatusBadge />
 
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
